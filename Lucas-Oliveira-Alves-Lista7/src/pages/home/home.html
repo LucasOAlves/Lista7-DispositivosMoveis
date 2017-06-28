@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Maps
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="localizarUTF()">
+        <ion-icon name="school"></ion-icon>
+      </button>
+      <button ion-button icon-only (click)="localizar()">
+        <ion-icon name="pin"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-searchbar [(ngModel)]="pesquisa" debounce="1500" (ionInput)="pesquisar()"></ion-searchbar>
+  <div id = "mapaView"></div>
+</ion-content>
