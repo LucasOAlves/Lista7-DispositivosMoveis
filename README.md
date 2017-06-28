@@ -1,0 +1,1 @@
+# Lista7-DispositivosMoveis
